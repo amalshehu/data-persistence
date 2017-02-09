@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MaterialModule } from '@angular/material';
 import { SettingsComponent } from './settings/settings.component';
-
+import { AppService } from './app.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +20,7 @@ import { SettingsComponent } from './settings/settings.component';
     HttpModule,
     MaterialModule.forRoot()
   ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
