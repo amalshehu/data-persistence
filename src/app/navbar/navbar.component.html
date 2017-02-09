@@ -1,3 +1,5 @@
-<p>
-  navbar works!
-</p>
+<button  md-raised-button [mdMenuTriggerFor]="menu">Menu</button>
+<md-menu #menu="mdMenu">
+  <button md-menu-item>Home</button>
+  <button md-menu-item>Settings</button>
+</md-menu>
