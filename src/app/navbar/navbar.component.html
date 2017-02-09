@@ -1,5 +1,5 @@
 <button  md-raised-button [mdMenuTriggerFor]="menu">Menu</button>
 <md-menu #menu="mdMenu">
-  <button md-menu-item>Home</button>
-  <button md-menu-item>Settings</button>
+  <button md-menu-item [routerLink]="['/home']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">Home</button>
+  <button md-menu-item [routerLink]="['/settings']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">Settings</button>
 </md-menu>
